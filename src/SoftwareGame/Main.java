@@ -38,7 +38,7 @@ public class Main {
         NavigationManager.showSplashScreen();
 
         /**
-        *Muestra la pantalla de bienvenida
+        *Muestra la pantalla de bienvenida junto con la clase que permite la navegación en el juego
         */
 
 
