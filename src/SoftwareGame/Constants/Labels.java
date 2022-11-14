@@ -1,3 +1,6 @@
+/**
+ * Clase con las etiquetas y textos que contiene el Juego
+ */
 package SoftwareGame.Constants;
 
 public class Labels {
