@@ -16,9 +16,9 @@ import java.util.Random;
 
 public class QuestionScreen {
     static JPanel panel = new JPanel();
-    static JLabel title = ComponentFactory.getTitle("");
-    static JLabel currentPlayerName = ComponentFactory.getSubTitle("");
-    static JLabel twoPlayerName = ComponentFactory.getDescription("");
+    static JLabel title = ComponentFactory.getTitle(null);
+    static JLabel currentPlayerName = ComponentFactory.getSubTitle(null);
+    static JLabel twoPlayerName = ComponentFactory.getDescription(null);
     static ArrayList<Question> questions = Data.getQuestions();
     static Question question;
 
