@@ -4,6 +4,7 @@
  *@autor: Luis Miguel Álvarez, Cristian Mesa
  *@documentador: Fabián Melo, Andres Mauricio Silva
  *@QA: Martha Mera, Luz Molina
+ *Desc: En esta clase se almacenan la combinación RGB de color para cambiar más adelante
  */
 
 package SoftwareGame.Constants;

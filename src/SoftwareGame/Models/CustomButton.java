@@ -1,7 +1,21 @@
+/**
+* Clase usada para el objeto botón personalizado como modelo
+*En: Nov 15 de 2022
+*@autor: Luis Miguel Álvarez, Cristian Mesa
+*@documentador: Fabián Melo, Andres Mauricio Silva
+*@QA: Martha Mera, Luz Molina
+*/
 package SoftwareGame.Models;
+/**
+ * Pertenece al paquete models
+ */
+
 
 import javax.swing.*;
 import java.awt.*;
+/**
+ * Usa las librerías de Java para manejo de interfaces gráficas
+ */
 
 public  class CustomButton extends JButton {
     public CustomButton(String text) {

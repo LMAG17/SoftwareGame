@@ -1,4 +1,16 @@
+/**
+* Clase con las pantallas de preguntas
+*En: Nov 12 de 2022
+*@autor: Luis Miguel Álvarez, Cristian Mesa
+*@documentador: Fabián Melo, Andres Mauricio Silva
+*@QA: Martha Mera, Luz Molina
+*/
+
 package SoftwareGame.Screens;
+/**
+ * Pertenece al paquete de Screens que incluye las pantallas del juego
+ */
+
 
 import SoftwareGame.Constants.Colors;
 import SoftwareGame.Data.Data;
@@ -7,6 +19,11 @@ import SoftwareGame.Main;
 import SoftwareGame.Models.Player;
 import SoftwareGame.Models.Question;
 
+/**
+ * Usa las librerías propias del juego
+ */
+
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
@@ -14,9 +31,13 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Random;
 
-public class QuestionScreen {
-    static JPanel panel = new JPanel();
-    static JLabel title = ComponentFactory.getTitle(null);
+/**
+ * Usa las librerías de Java para manejo de interfaces gráficas
+ */
+
+public class QuestionScreen {  //clase para crear os elementos de la pantalla de pregunta
+    static JPanel panel = new JPanel(); //Contenedor de objetos de interfaz gráfica
+    static JLabel title = ComponentFactory.getTitle(null); 
     static JLabel currentPlayerName = ComponentFactory.getSubTitle(null);
     static JLabel twoPlayerName = ComponentFactory.getDescription(null);
     static ArrayList<Question> questions = Data.getQuestions();
