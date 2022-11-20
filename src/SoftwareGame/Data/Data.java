@@ -1,9 +1,29 @@
+/**
+* Clase usada para guardar las preguntas requeridas en el juego
+*En: Nov 15 de 2022
+*@autor: Luis Miguel Álvarez, Cristian Mesa
+*@documentador: Fabián Melo, Andres Mauricio Silva
+*@QA: Martha Mera, Luz Molina
+*Desc: Crea las preguntas del juego para añadir, remover o modificar
+*/
+
 package SoftwareGame.Data;
+/**
+ * Pertenece al paquete Data
+ */
+
 
 import SoftwareGame.Models.Question;
+/**
+ * Importa la librería del objeto pregunta
+ */
+
 
 import java.util.ArrayList;
 import java.util.List;
+/**
+ * Usa las librerías propias de java para manejo de listas y arreglos
+ */
 
 public class Data {
     public static ArrayList<Question> getQuestions (){
