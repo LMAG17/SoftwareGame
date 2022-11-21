@@ -1,11 +1,12 @@
 /**
-* Clase usada para guardar las preguntas requeridas en el juego
-*En: Nov 15 de 2022
-*@autor: Luis Miguel Álvarez, Cristian Mesa
-*@documentador: Fabián Melo, Andres Mauricio Silva
-*@QA: Martha Mera, Luz Molina
-*Desc: Crea las preguntas del juego para añadir, remover o modificar
-*/
+ * Clase usada para guardar las preguntas requeridas en el juego
+ * En: Nov 15 de 2022
+ *
+ * @autor: Luis Miguel Álvarez, Cristian Mesa
+ * @documentador: Fabián Melo, Andres Mauricio Silva
+ * @QA: Martha Mera, Luz Molina
+ * Desc: Crea las preguntas del juego para añadir, remover o modificar
+ */
 
 package SoftwareGame.Data;
 /**
@@ -14,19 +15,21 @@ package SoftwareGame.Data;
 
 
 import SoftwareGame.Models.Question;
-/**
- * Importa la librería del objeto pregunta
- */
-
 
 import java.util.ArrayList;
 import java.util.List;
+
 /**
- * Usa las librerías propias de java para manejo de listas y arreglos
+ * Clase que se encarga de la gestion de la informacion de las preguntas y puntajes
  */
 
 public class Data {
-    public static ArrayList<Question> getQuestions (){
+    public static int individualPoints = 100;
+    public static int multiplayerPoints = 50;
+    public static int rightAnswerPoints = 10;
+    public static int wrongAnswerPoints = 0;
+
+    public static ArrayList<Question> getQuestions() {
         ArrayList<Question> questions = new ArrayList<Question>();
 
         questions.add(new
@@ -117,8 +120,8 @@ public class Data {
                         Question(
                         "En Java, se desea crear un nuevo objeto car de la clase Autos, la sintáxis correcta es: ",
                         List.of(
-                                "public class new car;",
-                                "private object car();",
+                                "Public class new car;",
+                                "Private object car();",
                                 "Autos car = new Autos();",
                                 "Create new object car.Autos();"
                         ),
@@ -159,12 +162,12 @@ public class Data {
                         Question(
                         "Un ejemplo de visibilidad es: ",
                         List.of(
-                                "public",
-                                "new",
-                                "main",
-                                "this"
+                                "Public",
+                                "New",
+                                "Main",
+                                "This"
                         ),
-                        "public"
+                        "Public"
                 )
         );
 
@@ -201,12 +204,12 @@ public class Data {
                         Question(
                         "la manera convencional de nombrar un getter de tipo entero debe ser: ",
                         List.of(
-                                "get method int(){return this.method;},",
-                                "private int methodGet(){return this.method;},",
-                                "public int getMethod(){return this.method;},",
-                                "new getter int Method(){return this.method;},"
+                                "Get method int(){return this.method;},",
+                                "Private int methodGet(){return this.method;},",
+                                "Public int getMethod(){return this.method;},",
+                                "New getter int Method(){return this.method;},"
                         ),
-                        "public int getMethod(){return this.method;},"
+                        "Public int getMethod(){return this.method;},"
                 )
         );
 
@@ -215,12 +218,12 @@ public class Data {
                         Question(
                         "Al espacio en la memoria donde se encuentra almacenado un objeto se le conoce como: ",
                         List.of(
-                                "bucket",
-                                "heap",
-                                "buffer",
-                                "memory address"
+                                "Bucket",
+                                "Heap",
+                                "Buffer",
+                                "Memory address"
                         ),
-                        "heap"
+                        "Heap"
                 )
         );
 
@@ -229,12 +232,12 @@ public class Data {
                         Question(
                         "Es un ejemplo de variable estática la siguiente: ",
                         List.of(
-                                "int divisor = 2",
-                                "private static long ultimo = 0",
-                                "static Math.PI = 3.1416",
-                                "public static long ultimo()"
+                                "Int divisor = 2",
+                                "Private static long ultimo = 0",
+                                "Static Math.PI = 3.1416",
+                                "Public static long ultimo()"
                         ),
-                        "private static long ultimo = 0"
+                        "Private static long ultimo = 0"
                 )
         );
 
@@ -243,12 +246,12 @@ public class Data {
                         Question(
                         "El comando para heredar la clase A en B es: ",
                         List.of(
-                                "class A extends B",
-                                "copy from A to B",
-                                "public static class A extends to B",
-                                "class A use in B"
+                                "Class A extends B",
+                                "Copy from A to B",
+                                "Public static class A extends to B",
+                                "Class A use in B"
                         ),
-                        "class A extends B"
+                        "Class A extends B"
                 )
         );
 
@@ -285,12 +288,12 @@ public class Data {
                         Question(
                         "El término cohesión se define como: ",
                         List.of(
-                                "hace referencia a la pertinencia de una clase como una entidad, o a cuánto se ajusta un método a un comportamiento especifico",
-                                "hace referencia a la interconectividad entre las clases",
-                                "hace referencia a ocultar tanto el comportamiento o la forma de desarrollar ciertas operaciones",
-                                "sugiere la interpretación de la clase como el desarrollador lo considere y como lo relaciona con las demás clases"
+                                "Hace referencia a la pertinencia de una clase como una entidad, o a cuánto se ajusta un método a un comportamiento especifico",
+                                "Hace referencia a la interconectividad entre las clases",
+                                "Hace referencia a ocultar tanto el comportamiento o la forma de desarrollar ciertas operaciones",
+                                "Sugiere la interpretación de la clase como el desarrollador lo considere y como lo relaciona con las demás clases"
                         ),
-                        "hace referencia a la pertinencia de una clase como una entidad, o a cuánto se ajusta un método a un comportamiento especifico"
+                        "Hace referencia a la pertinencia de una clase como una entidad, o a cuánto se ajusta un método a un comportamiento especifico"
                 )
         );
 
@@ -304,7 +307,7 @@ public class Data {
                                 "Encapsulamiento",
                                 "Acoplamiento"
                         ),
-                        "hace referencia a la pertinencia de una clase como una entidad, o a cuánto se ajusta un método a un comportamiento especifico"
+                        "Hace referencia a la pertinencia de una clase como una entidad, o a cuánto se ajusta un método a un comportamiento especifico"
                 )
         );
 
@@ -316,7 +319,7 @@ public class Data {
                                 "Una función en Java que ayuda a hacer mapas",
                                 "Un comando para mapear objetos básicos",
                                 "Una clase nativa para estructurar mapas",
-                                "Una estructura de datos que asigna parejas clave-valor"
+                                "Una estructura de datos o tipo de contenedor"
                         ),
                         "Una estructura de datos o tipo de contenedor"
                 )
@@ -327,12 +330,12 @@ public class Data {
                         Question(
                         "La librería necesaria para interactuar con el usuario en modo consola es: ",
                         List.of(
-                                "import java.util.ArrayList;",
-                                "import javax.swing.*;",
-                                "import java.util.Scanner;",
-                                "#include iostream.h;"
+                                "Import java.util.ArrayList;",
+                                "Import javax.swing.*;",
+                                "Import java.util.Scanner;",
+                                "Include iostream.h;"
                         ),
-                        "import java.util.Scanner;"
+                        "Import java.util.Scanner;"
                 )
         );
 
@@ -470,7 +473,7 @@ public class Data {
                                 "James Gosling",
                                 "Mark Elliot Zuckerberg,",
                                 "Andrew McCollum ",
-                                " Andrew McCollum"
+                                "Morgan Freeman"
                         ),
                         "James Gosling"
                 )
@@ -483,7 +486,7 @@ public class Data {
                         List.of(
                                 "Es un concepto similar al de 'array'",
                                 "Es un tipo particular de variable",
-                                "Es un modelo o plantilla a partir de la cual creamos objetos ",
+                                "Es un modelo o plantilla a partir de la cual creamos objetos",
                                 "Es una categoria de datos ordenada secuencialmente "
                         ),
                         "Es un modelo o plantilla a partir de la cual creamos objetos"
@@ -509,12 +512,12 @@ public class Data {
                         Question(
                         "Qué código asociarías a una Interfaz en Java ",
                         List.of(
-                                "public class Componente interface Product",
+                                "Public class Componente interface Product",
                                 "Componente cp = new Componente (interfaz)",
-                                "public class Componente implements Printable ",
-                                " Componente cp = new Componente.interfaz"
+                                "Public class Componente implements Printable",
+                                "Componente cp = new Componente.interfaz"
                         ),
-                        "public class Componente implements Printable"
+                        "Public class Componente implements Printable"
                 )
         );
 
@@ -525,7 +528,7 @@ public class Data {
                         List.of(
                                 "Un bucle",
                                 "Una interfaz",
-                                "Un error que lanza un método ",
+                                "Un error que lanza un método",
                                 "Un Metodo "
                         ),
                         "Un error que lanza un método"
@@ -539,8 +542,8 @@ public class Data {
                         List.of(
                                 "Es la forma de proteger las propiedades de un objetos",
                                 "un método de implementación",
-                                "metodología de diseño de software ",
-                                "  programas como Word"
+                                "Metodología de diseño de software ",
+                                "programas como Word"
                         ),
                         "Es la forma de proteger las propiedades de un objetos"
                 )
@@ -551,12 +554,12 @@ public class Data {
                         Question(
                         "Que es una Clases Abstracta ",
                         List.of(
-                                "paradigma de programación",
-                                "clases y objetos",
-                                "structurar un programa",
-                                "declara la existencia de métodos pero no la implementación de dichos métodos "
+                                "Paradigma de programación",
+                                "Clases y objetos",
+                                "Estructurar un programa",
+                                "Declara la existencia de métodos pero no la implementación de dichos métodos"
                         ),
-                        "declara la existencia de métodos pero no la implementación de dichos métodos "
+                        "Declara la existencia de métodos pero no la implementación de dichos métodos"
                 )
         );
 
@@ -565,12 +568,12 @@ public class Data {
                         Question(
                         "Que es un constructor ",
                         List.of(
-                                "método especial dentro de una clase ",
-                                "clases y objetos",
-                                " Una clase que declara la existencia",
-                                "una clase común la cual posee atributos "
+                                "Método especial dentro de una clase",
+                                "Clases y objetos",
+                                "Una clase que declara la existencia",
+                                "Una clase común la cual posee atributos"
                         ),
-                        "método especial dentro de una clase"
+                        "Método especial dentro de una clase"
                 )
         );
 
@@ -579,12 +582,12 @@ public class Data {
                         Question(
                         "Qué es una interfaz ",
                         List.of(
-                                "son las clases y objetos",
-                                "es una especie de plantilla para la construcción de clases",
-                                "proceso de crear un conjuntos ",
-                                "  códigos para desarrollar programas"
+                                "Son las clases y objetos",
+                                "Es una especie de plantilla para la construcción de clases",
+                                "Proceso de crear un conjuntos ",
+                                "Códigos para desarrollar programas"
                         ),
-                        "es una especie de plantilla para la construcción de clases"
+                        "Es una especie de plantilla para la construcción de clases"
                 )
         );
 
@@ -593,12 +596,12 @@ public class Data {
                         Question(
                         "los tokens son ",
                         List.of(
-                                " lenguaje de programación ",
-                                " son el equivalente a las palabras y signos de puntuación en el lenguaje natural escrito",
+                                "Lenguaje de programación ",
+                                "Son el equivalente a las palabras y signos de puntuación en el lenguaje natural escrito",
                                 "Fundamentos de programación  ",
-                                " classes and objects"
+                                "Classes and objects"
                         ),
-                        " son el equivalente a las palabras y signos de puntuación en el lenguaje natural escrito"
+                        "Son el equivalente a las palabras y signos de puntuación en el lenguaje natural escrito"
                 )
         );
 
@@ -608,9 +611,9 @@ public class Data {
                         "Tipos de modificadores de acceso",
                         List.of(
                                 "Private,Protected,Public,Friend,Protected Friend",
-                                "no existen como tal en el mundo real",
-                                "las llaves { }, y las sentencias entre ellas ",
-                                "una clase sin especificar  "
+                                "No existen como tal en el mundo real",
+                                "Las llaves { }, y las sentencias entre ellas ",
+                                "Una clase sin especificar"
                         ),
                         "Private,Protected,Public,Friend,Protected Friend"
                 )
@@ -621,10 +624,10 @@ public class Data {
                         Question(
                         "Qué es un objeto ",
                         List.of(
-                                "plataforma informática de lenguaje de programación ",
-                                "diseñado para ser portable en diversas plataformas",
-                                " aplicaciones web",
-                                " Los objetos corresponden a cosas que se encuentran en el mundo real"
+                                "Plataforma informática de lenguaje de programación ",
+                                "Diseñado para ser portable en diversas plataformas",
+                                "Aplicaciones web",
+                                "Los objetos corresponden a cosas que se encuentran en el mundo real"
                         ),
                         "Los objetos corresponden a cosas que se encuentran en el mundo real"
                 )
@@ -649,12 +652,12 @@ public class Data {
                         Question(
                         "Que hace la palabra clave super ",
                         List.of(
-                                "se facilitan en comparación a otros lenguajes de programación",
-                                "opción popular entre los desarrolladores",
-                                "se utiliza para llamar el método overridden, el cual anula uno de sus métodos de superclase",
-                                "lenguaje multiplataform "
+                                "Se facilitan en comparación a otros lenguajes de programación",
+                                "Opción popular entre los desarrolladores",
+                                "Se utiliza para llamar el método overridden, el cual anula uno de sus métodos de superclase",
+                                "Lenguaje multiplataform "
                         ),
-                        "se utiliza para llamar el método overridden, el cual anula uno de sus métodos de superclase"
+                        "Se utiliza para llamar el método overridden, el cual anula uno de sus métodos de superclase"
                 )
         );
 
@@ -663,26 +666,26 @@ public class Data {
                         Question(
                         "Cómo podemos llamar al método base sin crear una instancia ",
                         List.of(
-                                "clase común ",
-                                "método estático",
-                                "clases estriba  ",
-                                "clase abstracta  "
+                                "Clase común",
+                                "Método estático",
+                                "Clases estriba",
+                                "Clase abstracta"
                         ),
-                        "método estático"
+                        "Método estático"
                 )
         );
 
 
         questions.add(new
                         Question(
-                        "el puntero 'this' es",
+                        "El puntero 'this' es",
                         List.of(
                                 "La tecnología Java",
-                                "define al objeto actual de una clase,",
-                                "el código fuente ",
-                                "máquina virtual de Java"
+                                "Define al objeto actual de una clase",
+                                "El código fuente ",
+                                "Máquina virtual de Java"
                         ),
-                        "define al objeto actual de una clase"
+                        "Define al objeto actual de una clase"
                 )
         );
 
@@ -691,12 +694,12 @@ public class Data {
                         Question(
                         "Qué es una función virtual pura",
                         List.of(
-                                "necesita ser implementada por una clase derivada que no sea abstracta",
+                                "Necesita ser implementada por una clase derivada que no sea abstracta",
                                 "Un archivo de código fuente",
-                                "conceptos que se facilitan en comparación a otros lenguajes ",
+                                "Conceptos que se facilitan en comparación a otros lenguajes",
                                 "Independiente a la plataforma "
                         ),
-                        "necesita ser implementada por una clase derivada que no sea abstracta"
+                        "Necesita ser implementada por una clase derivada que no sea abstracta"
                 )
         );
 
@@ -705,12 +708,12 @@ public class Data {
                         Question(
                         "Que hace la palabra Static",
                         List.of(
-                                " sus metodos son declarados",
-                                "heredar de una clase ",
-                                " comportamientos de objetos",
-                                "define un método estático para una clase "
+                                "Sus metodos son declarados",
+                                "Heredar de una clase",
+                                "Comportamientos de objetos",
+                                "Define un método estático para una clase"
                         ),
-                        "define un método estático para una clase"
+                        "Define un método estático para una clase"
                 )
         );
 
@@ -719,12 +722,12 @@ public class Data {
                         Question(
                         "A qué denominamos un objeto servido ",
                         List.of(
-                                "servidor es el que otorga recursos al objeto sin consumirlos",
-                                "elementos estáticos",
-                                "miembros de clase ",
-                                "cálculos con circunferencias"
+                                "Servidor es el que otorga recursos al objeto sin consumirlos",
+                                "Elementos estáticos",
+                                "Miembros de clase ",
+                                "Cálculos con circunferencias"
                         ),
-                        "servidor es el que otorga recursos al objeto sin consumirlos"
+                        "Servidor es el que otorga recursos al objeto sin consumirlos"
                 )
         );
 
@@ -733,26 +736,26 @@ public class Data {
                         Question(
                         "Qué es el diseño orientado a objeto",
                         List.of(
-                                "notación para describir los modelos lógico y físico, así como los modelos estático",
-                                "son excepciones que se dan durante la ejecucion del programa.",
-                                "evento que ocurre durante la ejecucion del programa ",
-                                "campo declarado como estatico puede ser accedido o invocado sin la necesidad "
+                                "Notación para describir los modelos lógico y físico, así como los modelos estático",
+                                "Son excepciones que se dan durante la ejecucion del programa.",
+                                "Evento que ocurre durante la ejecucion del programa ",
+                                "Campo declarado como estatico puede ser accedido o invocado sin la necesidad "
                         ),
-                        "notación para describir los modelos lógico y físico, así como los modelos estático"
+                        "Notación para describir los modelos lógico y físico, así como los modelos estático"
                 )
         );
 
 
         questions.add(new
                         Question(
-                        "que es modularidad",
+                        "Qué es modularidad",
                         List.of(
-                                "dividir un programa en módulos que pueden compilarse por separado, pero que tienen conexiones con otros módulos",
-                                "nterface contractual ",
-                                "método de diseño que abarca el proceso de descomposición ",
-                                "análisis orientado a objetos "
+                                "Dividir un programa en módulos que pueden compilarse por separado, pero que tienen conexiones con otros módulos",
+                                "Interface contractual ",
+                                "Método de diseño que abarca el proceso de descomposición ",
+                                "Análisis orientado a objetos "
                         ),
-                        "dividir un programa en módulos que pueden compilarse por separado, pero que tienen conexiones con otros módulos"
+                        "Dividir un programa en módulos que pueden compilarse por separado, pero que tienen conexiones con otros módulos"
                 )
         );
 
@@ -763,7 +766,7 @@ public class Data {
                         List.of(
                                 "Si",
                                 "No",
-                                "A veses ",
+                                "A veces",
                                 "Casi siempre"
                         ),
                         "Si"
@@ -777,8 +780,8 @@ public class Data {
                         List.of(
                                 "2",
                                 "3",
-                                " 5",
-                                " 0"
+                                "5",
+                                "0"
                         ),
                         "2"
                 )
@@ -790,9 +793,9 @@ public class Data {
                         "Qué se coloca en el bloque “Catch” ",
                         List.of(
                                 "La excepción que necesitamos capturar",
-                                "lenguaje común",
+                                "Lenguaje común",
                                 "Ejecución y el programa falla ",
-                                " jerarquía es una clasificación "
+                                "Jerarquía es una clasificación "
                         ),
                         "La excepción que necesitamos capturar"
                 )
@@ -803,12 +806,12 @@ public class Data {
                         Question(
                         "Para que se utilizan las interfaces ",
                         List.of(
-                                " para obligar a definir a las clases que la implementan un comportamiento particular para cada una",
-                                "asociar a  un procesador virtual",
+                                "Para obligar a definir a las clases que la implementan un comportamiento particular para cada una",
+                                "Asociar a  un procesador virtual",
                                 "Se obtiene implementando la interfaz IDisposable ",
-                                "selección usan preguntas o nombres con elverbo ser "
+                                "Selección usan preguntas o nombres con elverbo ser "
                         ),
-                        " para obligar a definir a las clases que la implementan un comportamiento particular para cada una"
+                        "Para obligar a definir a las clases que la implementan un comportamiento particular para cada una"
                 )
         );
 
@@ -817,12 +820,12 @@ public class Data {
                         Question(
                         " Cómo funciona el puerto serie",
                         List.of(
-                                "esquema de transmisión de datos en serie un dispositivo envía datos aotro a razón de un bit a la vez a través de un cable",
-                                "forma genérica de denominar a una   interfaz  ",
-                                " En un esquema de transmisión de datos en paralelo",
-                                " envía datos a otro a una tasa de n número de bits a través de n número de cable "
+                                "Esquema de transmisión de datos en serie un dispositivo envía datos aotro a razón de un bit a la vez a través de un cable",
+                                "Forma genérica de denominar a una   interfaz  ",
+                                "En un esquema de transmisión de datos en paralelo",
+                                "Envía datos a otro a una tasa de n número de bits a través de n número de cable "
                         ),
-                        "esquema de transmisión de datos en serie un dispositivo envía datos aotro a razón de un bit a la vez a través de un cable"
+                        "Esquema de transmisión de datos en serie un dispositivo envía datos aotro a razón de un bit a la vez a través de un cable"
                 )
         );
 
@@ -831,12 +834,12 @@ public class Data {
                         Question(
                         "A qué denominamos un objeto cliente ",
                         List.of(
-                                "es cualquier objeto que utiliza los recursos de otro objeto, denominado servidor",
-                                "reacciona un objeto en términos de sus cambios de estado",
-                                " Un   contrato   entre   objetos   establece   todas   las   suposiciones",
-                                "comportamiento de un objeto servido "
+                                "Es cualquier objeto que utiliza los recursos de otro objeto, denominado servidor",
+                                "Reacciona un objeto en términos de sus cambios de estado",
+                                "Un   contrato   entre   objetos   establece   todas   las   suposiciones",
+                                "Comportamiento de un objeto servido "
                         ),
-                        "es cualquier objeto que utiliza los recursos de otro objeto, denominado servidor"
+                        "Es cualquier objeto que utiliza los recursos de otro objeto, denominado servidor"
                 )
         );
 
@@ -845,16 +848,17 @@ public class Data {
                         Question(
                         "Qué es una postcondición ",
                         List.of(
-                                "Es una invariante satisfecha por una operación. ",
-                                "es un concepto complementario a la abstracción",
-                                "representa todo lo que un cliente necesita saber de una clase ",
-                                " Se denomina implementación"
+                                "Es una invariante satisfecha por una operación.",
+                                "Es un concepto complementario a la abstracción",
+                                "Representa todo lo que un cliente necesita saber de una clase",
+                                "Se denomina implementación"
                         ),
-                        "Es una invariante satisfecha por una operación"
+                        "Es una invariante satisfecha por una operación."
                 )
         );
 
 
         return questions;
     }
+
 }

@@ -9,14 +9,10 @@
 
 package SoftwareGame.Constants;
 
-/**
- * Dentro del paquete de Constantes
- */
-
 import java.awt.*;
 
 /**
- * Importar la librería para manejo de diseño de interfaces
+ * Se definen los colores que se usaran en el juego
  */
 
 public class Colors {

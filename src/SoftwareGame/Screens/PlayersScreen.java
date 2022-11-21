@@ -1,38 +1,34 @@
 /**
-* Clase con las pantallas de jugadores
-*En: Nov 15 de 2022
-*@autor: Luis Miguel Álvarez, Cristian Mesa
-*@documentador: Fabián Melo, Andres Mauricio Silva
-*@QA: Martha Mera, Luz Molina
-*/
+ * Clase con las pantallas de jugadores
+ * En: Nov 15 de 2022
+ *
+ * @autor: Luis Miguel Álvarez, Cristian Mesa
+ * @documentador: Fabián Melo, Andres Mauricio Silva
+ * @QA: Martha Mera, Luz Molina
+ */
 
 package SoftwareGame.Screens;
-/**
- * Pertenece al paquete de Screens que incluye las pantallas del juego
- */
 
 import SoftwareGame.Constants.Colors;
 import SoftwareGame.Factory.ComponentFactory;
-import SoftwareGame.Main;
 import SoftwareGame.Navigation.NavigationManager;
-/**
- * Usa las librerías propias del juego
- */
-
 
 import javax.swing.*;
 import java.awt.*;
+
 /**
- * Usa las librerías de Java para manejo de interfaces gráficas
+ * Muetra la seleccion de jugadores
  */
 
- 
+
 public class PlayersScreen { //clase usada para las pantallas de los jugadores
 
     private static JFrame frame;
 
     public static void showPlayerSelection() {
+
         JPanel globalPanel = new JPanel();
+        globalPanel.removeAll();
         JLabel selectPlayerTitle = ComponentFactory.getTitle("Selecciona la cantidad de Jugadores");
 
         JPanel onePlayerContainer = new JPanel();

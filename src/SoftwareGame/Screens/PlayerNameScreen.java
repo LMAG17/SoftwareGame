@@ -1,10 +1,11 @@
 /**
-* Clase con las pantallas de selección de jugadores
-*En: Nov 15 de 2022
-*@autor: Luis Miguel Álvarez, Cristian Mesa
-*@documentador: Fabián Melo, Andres Mauricio Silva
-*@QA: Martha Mera, Luz Molina
-*/
+ * Clase con las pantallas de selección de jugadores
+ * En: Nov 15 de 2022
+ *
+ * @autor: Luis Miguel Álvarez, Cristian Mesa
+ * @documentador: Fabián Melo, Andres Mauricio Silva
+ * @QA: Martha Mera, Luz Molina
+ */
 
 package SoftwareGame.Screens;
 /**
@@ -16,21 +17,15 @@ import SoftwareGame.Factory.ComponentFactory;
 import SoftwareGame.Models.Player;
 import SoftwareGame.Navigation.NavigationManager;
 
-/**
- * Usa las librerías propias del juego
- */
-
-
-
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
 /**
- * Usa las librerías de Java para manejo de interfaces gráficas
+ * Muestra los input de los nombres de los jugadores
  */
 
-public class PlayerNameScreen { 
+public class PlayerNameScreen {
     static JPanel panel = new JPanel(); //Inserta un nuevo panel
     static TextField playerOneTextField = new TextField(); //Genera un campo tipo texto para jugador uno
     static TextField playerTwoTextField = new TextField(); //Genera un campo tipo texto para jugador dos
@@ -38,9 +33,9 @@ public class PlayerNameScreen {
     static JFrame frame; //Genera un nuevo frame
 
     public static void getPlayersName(int players) { //método que establece la cantidad de jugadores  y sus nombres
-
+        panel.removeAll();
         JLabel title = ComponentFactory.getTitle("Escoge un nombre para los jugadores"); //Establece el nombre de los jugadores
-        panel.add(title); 
+        panel.add(title);
 
         playerOneTextField.setText("Jugador 1"); //Establece el nombre del jugador uno (defecto Jugador 1)
         panel.add(playerOneTextField);
@@ -59,16 +54,21 @@ public class PlayerNameScreen {
 
         panel.setBackground(Colors.backgroundColor); //Establece el fondo
         panel.setBorder(BorderFactory.createEmptyBorder(50, 50, 50, 50)); //Establece laas dimensiones a partir de los bordes
-        panel.setLayout(new GridLayout(0, 1)); 
-        frame = ComponentFactory.presentInNewFrame(panel); 
+        panel.setLayout(new GridLayout(0, 1));
+        frame = ComponentFactory.presentInNewFrame(panel);
 
     }
-    
 
+    /**
+     * Oculta la pantalla actual
+     */
     public static void dispose() {
         frame.dispose(); //se deshace de la vista
     }
 
+    /**
+     * Crea el array list con los nombres de los jugadores
+     */
     public static ArrayList<Player> setPlayersName(int players) { //almacena en un array la cantidad de jugadores
         ArrayList<Player> pls = new ArrayList<>();
         pls.add(new Player(playerOneTextField.getText()));

@@ -8,10 +8,10 @@
  */
 
 package SoftwareGame.Constants;
-/**
- * Pertenece al paquete de constantes 
- */
 
+/**
+ * Se definen los tipos de fuente en el desarrollo del juego
+ */
 
 import java.awt.*;
 
@@ -21,6 +21,3 @@ public class Fonts {
     public static Font description = new Font("Serif", Font.PLAIN,16);
 }
 
-/**
- * Se usan tres tipos de fuente en el desarrollo del juego
- */

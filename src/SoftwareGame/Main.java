@@ -1,46 +1,31 @@
 /**
-*Método Main
-*En: Nov 12 de 2022
-*@autor: Luis Miguel Álvarez
+ * Método Main
+ * En: Nov 12 de 2022
+ *
+ * @autor: Luis Miguel Álvarez
  */
 
 package SoftwareGame;
 
-/**
-*Paquete que incluye los objetos del juego
- */
-
-import SoftwareGame.Navigation.NavigationManager;
 import SoftwareGame.Models.Player;
-/**
-*Librerías personalizadas necesarias 
- */
-
+import SoftwareGame.Navigation.NavigationManager;
 
 import java.util.ArrayList;
+
 /**
-*Clase nativa de Java para manejo de arreglos
+ *Clase principal del juego
  */
 
 public class Main {
-
-/**
-*Inicio de la clase Main
-*/
-  
+    /**Define una lista de jugadores*/
     public static ArrayList<Player> players;
-
+    /**Identifica el jugador actual*/
+    public static int currentPlayer = 0;
     /**
-    *Objeto que almacena en un arreglo los jugadores
-    */
-
+     *Metodo que ejecuta el juego
+     */
     public static void main(String[] args) {
+        /**Llama al gestor de navegacion e inicia el juego*/
         NavigationManager.showSplashScreen();
-
-        /**
-        *Muestra la pantalla de bienvenida junto con la clase que permite la navegación en el juego
-        */
-
-
     }
 }
