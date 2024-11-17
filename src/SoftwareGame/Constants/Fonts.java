@@ -1,9 +1,9 @@
 /**
  * Clase que se encarga de gestionar las fuentes
- *En: Nov 12 de 2022
- *@autor: Luis Miguel Álvarez, Cristian Mesa
- *@documentador: Fabián Melo, Andres Mauricio Silva
- *@QA: Martha Mera, Luz Molina
+ *En: Nov 12 de 2024
+ *@autor: Maria Paula Rodriguez Diaz
+ *@documentador: Giancarlo Ramirez Pulido, David Perez Alvarado
+ *@QA: Maria Paula Rodriguez Diaz, Giancarlo Ramirez Pulido, David Perez Alvarado
  *Desc: En esta clase se usan los distintos tipos de fuente que se pueden cambiar
  */
 

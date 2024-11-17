@@ -1,10 +1,10 @@
 /**
  * Clase usada para guardar las preguntas requeridas en el juego
- * En: Nov 15 de 2022
+ * En: Nov 15 de 2024
  *
- * @autor: Luis Miguel Álvarez, Cristian Mesa
- * @documentador: Fabián Melo, Andres Mauricio Silva
- * @QA: Martha Mera, Luz Molina
+ * @autor: Maria Paula Rodriguez Diaz
+ * @documentador: Giancarlo Ramirez Pulido, David Perez Alvarado
+ * @QA: Maria Paula Rodriguez Diaz, Giancarlo Ramirez Pulido, David Perez Alvarado
  * Desc: Crea las preguntas del juego para añadir, remover o modificar
  */
 
@@ -32,830 +32,1266 @@ public class Data {
     public static ArrayList<Question> getQuestions() {
         ArrayList<Question> questions = new ArrayList<Question>();
 
+        
         questions.add(new
-                        Question(
-                        "NO es un paradigma de programación: ",
+                Question(
+                        "¿Cuál es el producto de la multiplicación 1 X 1?",
                         List.of(
-                                "Programación orientada a objetos",
-                                "Programación orientada a aspectos",
-                                "Programación lineal",
-                                "Programación estructurada"
+                                "99",
+                                "1",
+                                "89",
+                                "47"
                         ),
-                        "Programación lineal"
+                        "1"
                 )
-        );
-
+        );  
+        
 
         questions.add(new
-                        Question(
-                        "En cuanto a la definición de objetos es correcto afirmar: ",
+                Question(
+                        "¿Cuál es el producto de la multiplicación 1 X 2?",
                         List.of(
-                                "Un objeto es lo mismo que un método en Java pero en Python son diferentes",
-                                "Un objeto es cualquier cosa imaginable que puede ser descrito listando sus características",
-                                "Un objeto se compone de campos, comportamientos y clases",
-                                "Un objeto puede tener máximo 4GB en RAM"
-                        ),
-                        "Un objeto es cualquier cosa imaginable que puede ser descrito listando sus características"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "El acrónimo POO significa: ",
-                        List.of(
-                                "Paradigma Orientado a Objetos",
-                                "Programación de Orden Oscilatorio",
-                                "Programación Orientada a Objetos",
-                                "Ninguna de las anteriores"
-                        ),
-                        "Programación Orientada a Objetos"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Un método constructor hace referencia a: ",
-                        List.of(
-                                "La metodología usada para las buenas prácticas de construir programas en POO",
-                                "Una librería usada para construir fracciones de código que puede ser reusable por otras clases",
-                                "Un fragmento de código que se usa para invocar nuevos objetos, pero solo usados como privados",
-                                "Un tipo de comportamiento especial usado para la creación de objetos"
-                        ),
-                        "Un tipo de comportamiento especial usado para la creación de objetos"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Una etiqueta se usa para: ",
-                        List.of(
-                                "Comentar el código y que se pueda entender por otros desarrolladores",
-                                "Definir el código con un número de identificación  del desarrollador",
-                                "Identificar un campo que a su vez es una característica del objeto",
-                                "Un objeto usado solo en la interfaz gráfica para titular un atributo"
-                        ),
-                        "Identificar un campo que a su vez es una característica del objeto"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Al proceso de creación de un objeto se le conoce como: ",
-                        List.of(
-                                "Instanciación",
-                                "Definición",
-                                "Depuración",
-                                "Adición"
-                        ),
-                        "Instanciación"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "En Java, se desea crear un nuevo objeto car de la clase Autos, la sintáxis correcta es: ",
-                        List.of(
-                                "Public class new car;",
-                                "Private object car();",
-                                "Autos car = new Autos();",
-                                "Create new object car.Autos();"
-                        ),
-                        "Autos car = new Autos();"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "En cuanto a los constructores es correcto afirmar: ",
-                        List.of(
-                                "Deben tener un nombre distinto a la clase que lo contiene, para diferenciarse de otros",
-                                "No hay necesidad de colocar una lista de argumentos siempre y cuando tenga algún tipo de retorno como VOID",
-                                "Debe tener el mismo nombre de la clase que lo contiene, y se diferencia por la lista de parámetros que reciben",
-                                "En toda clase debe existir un método contructor, de lo contrario el sistema devuelve error"
-                        ),
-                        "Debe tener el mismo nombre de la clase que lo contiene, y se diferencia por la lista de parámetros que reciben"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Un diagrama de clases UML es: ",
-                        List.of(
-                                "Un cuadro en Excel o cualquier herramienta para listar las clases de un proyecto",
-                                "Un modelo para representar los elementos que hacen parte de la definición de una o varias clases",
-                                "Un diagrama de flujo para representar la relación entre las clases",
-                                "Un modelo que representa los elementos, atributos y métodos que pertenecen a una clase"
-                        ),
-                        "Un modelo para representar los elementos que hacen parte de la definición de una o varias clases"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Un ejemplo de visibilidad es: ",
-                        List.of(
-                                "Public",
-                                "New",
-                                "Main",
-                                "This"
-                        ),
-                        "Public"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "A la acción que consiste en separar los detalles en que se utilizan los métodos y clases se le conoce como: ",
-                        List.of(
-                                "Encapsulación",
-                                "Recursividad",
-                                "Instanciación",
-                                "Abstracción"
-                        ),
-                        "Abstracción"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "El método Setter es: ",
-                        List.of(
-                                "Una metodología propuesta por el matemático Setter para desarrollar Software",
-                                "Consiste en permitir la modificación de un valor del atributo",
-                                "Hace referencia al uso del comando SET en Java",
-                                "Consiste en definir los parámetros de inicializar variables en Java"
-                        ),
-                        "Consiste en permitir la modificación de un valor del atributo"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "la manera convencional de nombrar un getter de tipo entero debe ser: ",
-                        List.of(
-                                "Get method int(){return this.method;},",
-                                "Private int methodGet(){return this.method;},",
-                                "Public int getMethod(){return this.method;},",
-                                "New getter int Method(){return this.method;},"
-                        ),
-                        "Public int getMethod(){return this.method;},"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Al espacio en la memoria donde se encuentra almacenado un objeto se le conoce como: ",
-                        List.of(
-                                "Bucket",
-                                "Heap",
-                                "Buffer",
-                                "Memory address"
-                        ),
-                        "Heap"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Es un ejemplo de variable estática la siguiente: ",
-                        List.of(
-                                "Int divisor = 2",
-                                "Private static long ultimo = 0",
-                                "Static Math.PI = 3.1416",
-                                "Public static long ultimo()"
-                        ),
-                        "Private static long ultimo = 0"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "El comando para heredar la clase A en B es: ",
-                        List.of(
-                                "Class A extends B",
-                                "Copy from A to B",
-                                "Public static class A extends to B",
-                                "Class A use in B"
-                        ),
-                        "Class A extends B"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "El acrónimo GUI significa: ",
-                        List.of(
-                                "GUIA práctica de programación en JAVA",
-                                "Guide Using Intensive, para determinar un atributo guia usado intensivamente",
-                                "Goal Unique Inherited, para definir el objetivo del método constructor como único",
-                                "Graphic User Interface, para definir una aplicación con interfaz gráfica"
-                        ),
-                        "Graphic User Interface, para definir una aplicación con interfaz gráfica"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "El polimorfísmo se define como: ",
-                        List.of(
-                                "Un mecanismo que permite tener un método en la clase padre y sobreescribirlo en la clase hija",
-                                "Un hecho que hace que un método se pueda usar solo en la clase hija",
-                                "Un método que permite tener otro método en cualquier clase de un proyecto",
-                                "Una forma de multiplicar los objetos en cualquier procedimiento"
-                        ),
-                        "Un mecanismo que permite tener un método en la clase padre y sobreescribirlo en la clase hija"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "El término cohesión se define como: ",
-                        List.of(
-                                "Hace referencia a la pertinencia de una clase como una entidad, o a cuánto se ajusta un método a un comportamiento especifico",
-                                "Hace referencia a la interconectividad entre las clases",
-                                "Hace referencia a ocultar tanto el comportamiento o la forma de desarrollar ciertas operaciones",
-                                "Sugiere la interpretación de la clase como el desarrollador lo considere y como lo relaciona con las demás clases"
-                        ),
-                        "Hace referencia a la pertinencia de una clase como una entidad, o a cuánto se ajusta un método a un comportamiento especifico"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Una de las reglas fundamentales de la POO es nunca usar campos públicos. La característica a ser usada para aplicar esta regla es: ",
-                        List.of(
-                                "Herencia",
-                                "Poliformísmo",
-                                "Encapsulamiento",
-                                "Acoplamiento"
-                        ),
-                        "Hace referencia a la pertinencia de una clase como una entidad, o a cuánto se ajusta un método a un comportamiento especifico"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "HashMap en Java, hace referencia a: ",
-                        List.of(
-                                "Una función en Java que ayuda a hacer mapas",
-                                "Un comando para mapear objetos básicos",
-                                "Una clase nativa para estructurar mapas",
-                                "Una estructura de datos o tipo de contenedor"
-                        ),
-                        "Una estructura de datos o tipo de contenedor"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "La librería necesaria para interactuar con el usuario en modo consola es: ",
-                        List.of(
-                                "Import java.util.ArrayList;",
-                                "Import javax.swing.*;",
-                                "Import java.util.Scanner;",
-                                "Include iostream.h;"
-                        ),
-                        "Import java.util.Scanner;"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Algunas características de los contenedores tipo conjunto son: ",
-                        List.of(
-                                "Se pueden eliminar elementos, pero no se puede saber su tamaño",
-                                "Se pueden almacenar elementos repetidos y se puede saber su tamaño",
-                                "Se pueden hacer operaciones matemáticas como suma, resta, multiplicación y división",
-                                "No se pueden almacenar elementos repetidos, pero se puede consultar si un elemento está o no"
-                        ),
-                        "No se pueden almacenar elementos repetidos, pero se puede consultar si un elemento está o no"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Prolog es un lenguaje de programación que usa el paradigma: ",
-                        List.of(
-                                "Programación orientada a objetos",
-                                "Programación imperativa",
-                                "Programación basada en hechos",
-                                "Programación lógica"
-                        ),
-                        "Programación lógica"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "La palabra que falta en la siguiente afirmación es: Se habla de recursividad cuando una función esta en términos de sí misma o a grandes rasgos se define un ______ si una o más reglas en su definición se refieren a sí mismas. ",
-                        List.of(
-                                "Predicado",
-                                "Sujeto",
-                                "Sustantivo",
-                                "Elemento"
-                        ),
-                        "Predicado"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "El valor de X es ?- len([a, b, c, d, e, [a, b], g, [d,e]], X): ",
-                        List.of(
-                                "6",
-                                "8",
-                                "10",
-                                "La sintáxis está mal escrita"
-                        ),
-                        "8"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Un ejemplo de lenguaje de programación funcional es: ",
-                        List.of(
-                                "Ruby",
-                                "J++",
-                                "Python",
-                                "Haskell"
-                        ),
-                        "Haskell"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Complete la frase: Todas aquellas clases que no tienen una superclase explícita tienen como su superclase a la clase _______.",
-                        List.of(
-                                "Util",
-                                "Object",
-                                "Swing",
-                                "Main"
-                        ),
-                        "Object"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "En Java un ActionListener es: ",
-                        List.of(
-                                "Un oyente de eventos",
-                                "Un oyente que detecta errores en el código",
-                                "Una subclase que analiza ruido en el código",
-                                "Un tipo de datos para sonidos en Java"
-                        ),
-                        "Un oyente de eventos"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Un operador lógico en Java para Y es: ",
-                        List.of(
-                                "A && B",
-                                "A AND B",
-                                "A NAND B",
-                                "A & B"
-                        ),
-                        "A && B"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "En que año fue comercializo java: ",
-                        List.of(
-                                "1991",
-                                "1995",
-                                "2002",
-                                "2020"
-                        ),
-                        "1995"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "El lenguaje de programacion java fue desarrollado por: ",
-                        List.of(
-                                "James Gosling",
-                                "Mark Elliot Zuckerberg,",
-                                "Andrew McCollum ",
-                                "Morgan Freeman"
-                        ),
-                        "James Gosling"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Que define mejor el concepto ‘clase’ en la programación orientada a objetos: ",
-                        List.of(
-                                "Es un concepto similar al de 'array'",
-                                "Es un tipo particular de variable",
-                                "Es un modelo o plantilla a partir de la cual creamos objetos",
-                                "Es una categoria de datos ordenada secuencialmente "
-                        ),
-                        "Es un modelo o plantilla a partir de la cual creamos objetos"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Qué significa instanciar una clase ",
-                        List.of(
-                                "Duplicar la clase",
-                                "Eliminar una clase",
-                                "Crear un objeto a partir de la clase ",
-                                "Conectar dos clases entre sí "
-                        ),
-                        "Eliminar una clase"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Qué código asociarías a una Interfaz en Java ",
-                        List.of(
-                                "Public class Componente interface Product",
-                                "Componente cp = new Componente (interfaz)",
-                                "Public class Componente implements Printable",
-                                "Componente cp = new Componente.interfaz"
-                        ),
-                        "Public class Componente implements Printable"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Qué es una excepción",
-                        List.of(
-                                "Un bucle",
-                                "Una interfaz",
-                                "Un error que lanza un método",
-                                "Un Metodo "
-                        ),
-                        "Un error que lanza un método"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Que es la Encapsulación ",
-                        List.of(
-                                "Es la forma de proteger las propiedades de un objetos",
-                                "un método de implementación",
-                                "Metodología de diseño de software ",
-                                "programas como Word"
-                        ),
-                        "Es la forma de proteger las propiedades de un objetos"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Que es una Clases Abstracta ",
-                        List.of(
-                                "Paradigma de programación",
-                                "Clases y objetos",
-                                "Estructurar un programa",
-                                "Declara la existencia de métodos pero no la implementación de dichos métodos"
-                        ),
-                        "Declara la existencia de métodos pero no la implementación de dichos métodos"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Que es un constructor ",
-                        List.of(
-                                "Método especial dentro de una clase",
-                                "Clases y objetos",
-                                "Una clase que declara la existencia",
-                                "Una clase común la cual posee atributos"
-                        ),
-                        "Método especial dentro de una clase"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Qué es una interfaz ",
-                        List.of(
-                                "Son las clases y objetos",
-                                "Es una especie de plantilla para la construcción de clases",
-                                "Proceso de crear un conjuntos ",
-                                "Códigos para desarrollar programas"
-                        ),
-                        "Es una especie de plantilla para la construcción de clases"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "los tokens son ",
-                        List.of(
-                                "Lenguaje de programación ",
-                                "Son el equivalente a las palabras y signos de puntuación en el lenguaje natural escrito",
-                                "Fundamentos de programación  ",
-                                "Classes and objects"
-                        ),
-                        "Son el equivalente a las palabras y signos de puntuación en el lenguaje natural escrito"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Tipos de modificadores de acceso",
-                        List.of(
-                                "Private,Protected,Public,Friend,Protected Friend",
-                                "No existen como tal en el mundo real",
-                                "Las llaves { }, y las sentencias entre ellas ",
-                                "Una clase sin especificar"
-                        ),
-                        "Private,Protected,Public,Friend,Protected Friend"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Qué es un objeto ",
-                        List.of(
-                                "Plataforma informática de lenguaje de programación ",
-                                "Diseñado para ser portable en diversas plataformas",
-                                "Aplicaciones web",
-                                "Los objetos corresponden a cosas que se encuentran en el mundo real"
-                        ),
-                        "Los objetos corresponden a cosas que se encuentran en el mundo real"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Pueden las clases en Java heredar mas de una clase ",
-                        List.of(
-                                "Si",
-                                "No",
-                                "a veces ",
-                                "Casi siempre "
-                        ),
-                        "No"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Que hace la palabra clave super ",
-                        List.of(
-                                "Se facilitan en comparación a otros lenguajes de programación",
-                                "Opción popular entre los desarrolladores",
-                                "Se utiliza para llamar el método overridden, el cual anula uno de sus métodos de superclase",
-                                "Lenguaje multiplataform "
-                        ),
-                        "Se utiliza para llamar el método overridden, el cual anula uno de sus métodos de superclase"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Cómo podemos llamar al método base sin crear una instancia ",
-                        List.of(
-                                "Clase común",
-                                "Método estático",
-                                "Clases estriba",
-                                "Clase abstracta"
-                        ),
-                        "Método estático"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "El puntero 'this' es",
-                        List.of(
-                                "La tecnología Java",
-                                "Define al objeto actual de una clase",
-                                "El código fuente ",
-                                "Máquina virtual de Java"
-                        ),
-                        "Define al objeto actual de una clase"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Qué es una función virtual pura",
-                        List.of(
-                                "Necesita ser implementada por una clase derivada que no sea abstracta",
-                                "Un archivo de código fuente",
-                                "Conceptos que se facilitan en comparación a otros lenguajes",
-                                "Independiente a la plataforma "
-                        ),
-                        "Necesita ser implementada por una clase derivada que no sea abstracta"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Que hace la palabra Static",
-                        List.of(
-                                "Sus metodos son declarados",
-                                "Heredar de una clase",
-                                "Comportamientos de objetos",
-                                "Define un método estático para una clase"
-                        ),
-                        "Define un método estático para una clase"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "A qué denominamos un objeto servido ",
-                        List.of(
-                                "Servidor es el que otorga recursos al objeto sin consumirlos",
-                                "Elementos estáticos",
-                                "Miembros de clase ",
-                                "Cálculos con circunferencias"
-                        ),
-                        "Servidor es el que otorga recursos al objeto sin consumirlos"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Qué es el diseño orientado a objeto",
-                        List.of(
-                                "Notación para describir los modelos lógico y físico, así como los modelos estático",
-                                "Son excepciones que se dan durante la ejecucion del programa.",
-                                "Evento que ocurre durante la ejecucion del programa ",
-                                "Campo declarado como estatico puede ser accedido o invocado sin la necesidad "
-                        ),
-                        "Notación para describir los modelos lógico y físico, así como los modelos estático"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Qué es modularidad",
-                        List.of(
-                                "Dividir un programa en módulos que pueden compilarse por separado, pero que tienen conexiones con otros módulos",
-                                "Interface contractual ",
-                                "Método de diseño que abarca el proceso de descomposición ",
-                                "Análisis orientado a objetos "
-                        ),
-                        "Dividir un programa en módulos que pueden compilarse por separado, pero que tienen conexiones con otros módulos"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Todos los métodos son operaciones ",
-                        List.of(
-                                "Si",
-                                "No",
-                                "A veces",
-                                "Casi siempre"
-                        ),
-                        "Si"
-                )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Cuántos tipos de herencia existen ",
-                        List.of(
+                                "49",
+                                "92",
                                 "2",
-                                "3",
-                                "5",
-                                "0"
+                                "84"
                         ),
                         "2"
                 )
-        );
-
-
-        questions.add(new
-                        Question(
-                        "Qué se coloca en el bloque “Catch” ",
-                        List.of(
-                                "La excepción que necesitamos capturar",
-                                "Lenguaje común",
-                                "Ejecución y el programa falla ",
-                                "Jerarquía es una clasificación "
-                        ),
-                        "La excepción que necesitamos capturar"
-                )
-        );
-
+        );  
+        
 
         questions.add(new
-                        Question(
-                        "Para que se utilizan las interfaces ",
+                Question(
+                        "¿Cuál es el producto de la multiplicación 1 X 3?",
                         List.of(
-                                "Para obligar a definir a las clases que la implementan un comportamiento particular para cada una",
-                                "Asociar a  un procesador virtual",
-                                "Se obtiene implementando la interfaz IDisposable ",
-                                "Selección usan preguntas o nombres con elverbo ser "
+                                "3",
+                                "97",
+                                "31",
+                                "40"
                         ),
-                        "Para obligar a definir a las clases que la implementan un comportamiento particular para cada una"
+                        "3"
                 )
-        );
-
+        );  
+        
 
         questions.add(new
-                        Question(
-                        " Cómo funciona el puerto serie",
+                Question(
+                        "¿Cuál es el producto de la multiplicación 1 X 4?",
                         List.of(
-                                "Esquema de transmisión de datos en serie un dispositivo envía datos aotro a razón de un bit a la vez a través de un cable",
-                                "Forma genérica de denominar a una   interfaz  ",
-                                "En un esquema de transmisión de datos en paralelo",
-                                "Envía datos a otro a una tasa de n número de bits a través de n número de cable "
+                                "64",
+                                "13",
+                                "4",
+                                "65"
                         ),
-                        "Esquema de transmisión de datos en serie un dispositivo envía datos aotro a razón de un bit a la vez a través de un cable"
+                        "4"
                 )
-        );
-
+        );  
+        
 
         questions.add(new
-                        Question(
-                        "A qué denominamos un objeto cliente ",
+                Question(
+                        "¿Cuál es el producto de la multiplicación 1 X 5?",
                         List.of(
-                                "Es cualquier objeto que utiliza los recursos de otro objeto, denominado servidor",
-                                "Reacciona un objeto en términos de sus cambios de estado",
-                                "Un   contrato   entre   objetos   establece   todas   las   suposiciones",
-                                "Comportamiento de un objeto servido "
+                                "85",
+                                "21",
+                                "5",
+                                "34"
                         ),
-                        "Es cualquier objeto que utiliza los recursos de otro objeto, denominado servidor"
+                        "5"
                 )
-        );
-
+        );  
+        
 
         questions.add(new
-                        Question(
-                        "Qué es una postcondición ",
+                Question(
+                        "¿Cuál es el producto de la multiplicación 1 X 6?",
                         List.of(
-                                "Es una invariante satisfecha por una operación.",
-                                "Es un concepto complementario a la abstracción",
-                                "Representa todo lo que un cliente necesita saber de una clase",
-                                "Se denomina implementación"
+                                "40",
+                                "47",
+                                "10",
+                                "6"
                         ),
-                        "Es una invariante satisfecha por una operación."
+                        "6"
                 )
-        );
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 1 X 7?",
+                        List.of(
+                                "62",
+                                "7",
+                                "54",
+                                "63"
+                        ),
+                        "7"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 1 X 8?",
+                        List.of(
+                                "43",
+                                "35",
+                                "74",
+                                "8"
+                        ),
+                        "8"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 1 X 9?",
+                        List.of(
+                                "96",
+                                "44",
+                                "51",
+                                "9"
+                        ),
+                        "9"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 2 X 1?",
+                        List.of(
+                                "2",
+                                "62",
+                                "91",
+                                "14"
+                        ),
+                        "2"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 2 X 2?",
+                        List.of(
+                                "4",
+                                "24",
+                                "96",
+                                "72"
+                        ),
+                        "4"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 2 X 3?",
+                        List.of(
+                                "6",
+                                "34",
+                                "26",
+                                "26"
+                        ),
+                        "6"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 2 X 4?",
+                        List.of(
+                                "11",
+                                "41",
+                                "8",
+                                "83"
+                        ),
+                        "8"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 2 X 5?",
+                        List.of(
+                                "45",
+                                "55",
+                                "43",
+                                "10"
+                        ),
+                        "10"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 2 X 6?",
+                        List.of(
+                                "24",
+                                "12",
+                                "1",
+                                "41"
+                        ),
+                        "12"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 2 X 7?",
+                        List.of(
+                                "40",
+                                "14",
+                                "98",
+                                "25"
+                        ),
+                        "14"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 2 X 8?",
+                        List.of(
+                                "45",
+                                "57",
+                                "16",
+                                "21"
+                        ),
+                        "16"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 2 X 9?",
+                        List.of(
+                                "18",
+                                "84",
+                                "47",
+                                "89"
+                        ),
+                        "18"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 3 X 1?",
+                        List.of(
+                                "5",
+                                "50",
+                                "15",
+                                "3"
+                        ),
+                        "3"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 3 X 2?",
+                        List.of(
+                                "6",
+                                "74",
+                                "95",
+                                "33"
+                        ),
+                        "6"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 3 X 3?",
+                        List.of(
+                                "9",
+                                "87",
+                                "8",
+                                "40"
+                        ),
+                        "9"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 3 X 4?",
+                        List.of(
+                                "12",
+                                "34",
+                                "26",
+                                "23"
+                        ),
+                        "12"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 3 X 5?",
+                        List.of(
+                                "52",
+                                "87",
+                                "44",
+                                "15"
+                        ),
+                        "15"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 3 X 6?",
+                        List.of(
+                                "3",
+                                "58",
+                                "13",
+                                "18"
+                        ),
+                        "18"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 3 X 7?",
+                        List.of(
+                                "11",
+                                "87",
+                                "21",
+                                "44"
+                        ),
+                        "21"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 3 X 8?",
+                        List.of(
+                                "24",
+                                "32",
+                                "57",
+                                "87"
+                        ),
+                        "24"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 3 X 9?",
+                        List.of(
+                                "29",
+                                "27",
+                                "39",
+                                "53"
+                        ),
+                        "27"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 4 X 1?",
+                        List.of(
+                                "55",
+                                "48",
+                                "4",
+                                "76"
+                        ),
+                        "4"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 4 X 2?",
+                        List.of(
+                                "19",
+                                "60",
+                                "8",
+                                "39"
+                        ),
+                        "8"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 4 X 3?",
+                        List.of(
+                                "64",
+                                "79",
+                                "12",
+                                "48"
+                        ),
+                        "12"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 4 X 4?",
+                        List.of(
+                                "51",
+                                "16",
+                                "14",
+                                "65"
+                        ),
+                        "16"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 4 X 5?",
+                        List.of(
+                                "48",
+                                "71",
+                                "68",
+                                "20"
+                        ),
+                        "20"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 4 X 6?",
+                        List.of(
+                                "24",
+                                "41",
+                                "98",
+                                "78"
+                        ),
+                        "24"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 4 X 7?",
+                        List.of(
+                                "20",
+                                "61",
+                                "28",
+                                "97"
+                        ),
+                        "28"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 4 X 8?",
+                        List.of(
+                                "32",
+                                "57",
+                                "16",
+                                "74"
+                        ),
+                        "32"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 4 X 9?",
+                        List.of(
+                                "31",
+                                "75",
+                                "36",
+                                "45"
+                        ),
+                        "36"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 5 X 1?",
+                        List.of(
+                                "70",
+                                "15",
+                                "68",
+                                "5"
+                        ),
+                        "5"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 5 X 2?",
+                        List.of(
+                                "34",
+                                "35",
+                                "10",
+                                "81"
+                        ),
+                        "10"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 5 X 3?",
+                        List.of(
+                                "15",
+                                "77",
+                                "55",
+                                "21"
+                        ),
+                        "15"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 5 X 4?",
+                        List.of(
+                                "58",
+                                "61",
+                                "20",
+                                "100"
+                        ),
+                        "20"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 5 X 5?",
+                        List.of(
+                                "57",
+                                "25",
+                                "5",
+                                "27"
+                        ),
+                        "25"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 5 X 6?",
+                        List.of(
+                                "30",
+                                "78",
+                                "68",
+                                "68"
+                        ),
+                        "30"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 5 X 7?",
+                        List.of(
+                                "35",
+                                "29",
+                                "55",
+                                "20"
+                        ),
+                        "35"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 5 X 8?",
+                        List.of(
+                                "23",
+                                "40",
+                                "49",
+                                "58"
+                        ),
+                        "40"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 5 X 9?",
+                        List.of(
+                                "45",
+                                "75",
+                                "91",
+                                "73"
+                        ),
+                        "45"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 6 X 1?",
+                        List.of(
+                                "54",
+                                "94",
+                                "6",
+                                "96"
+                        ),
+                        "6"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 6 X 2?",
+                        List.of(
+                                "64",
+                                "23",
+                                "67",
+                                "12"
+                        ),
+                        "12"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 6 X 3?",
+                        List.of(
+                                "5",
+                                "18",
+                                "70",
+                                "57"
+                        ),
+                        "18"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 6 X 4?",
+                        List.of(
+                                "44",
+                                "60",
+                                "24",
+                                "24"
+                        ),
+                        "24"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 6 X 5?",
+                        List.of(
+                                "48",
+                                "30",
+                                "28",
+                                "62"
+                        ),
+                        "30"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 6 X 6?",
+                        List.of(
+                                "6",
+                                "71",
+                                "35",
+                                "36"
+                        ),
+                        "36"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 6 X 7?",
+                        List.of(
+                                "55",
+                                "10",
+                                "42",
+                                "59"
+                        ),
+                        "42"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 6 X 8?",
+                        List.of(
+                                "27",
+                                "48",
+                                "31",
+                                "23"
+                        ),
+                        "48"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 6 X 9?",
+                        List.of(
+                                "23",
+                                "54",
+                                "15",
+                                "56"
+                        ),
+                        "54"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 7 X 1?",
+                        List.of(
+                                "19",
+                                "7",
+                                "75",
+                                "91"
+                        ),
+                        "7"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 7 X 2?",
+                        List.of(
+                                "19",
+                                "99",
+                                "97",
+                                "14"
+                        ),
+                        "14"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 7 X 3?",
+                        List.of(
+                                "4",
+                                "14",
+                                "21",
+                                "100"
+                        ),
+                        "21"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 7 X 4?",
+                        List.of(
+                                "73",
+                                "28",
+                                "72",
+                                "11"
+                        ),
+                        "28"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 7 X 5?",
+                        List.of(
+                                "35",
+                                "14",
+                                "44",
+                                "60"
+                        ),
+                        "35"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 7 X 6?",
+                        List.of(
+                                "42",
+                                "72",
+                                "86",
+                                "19"
+                        ),
+                        "42"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 7 X 7?",
+                        List.of(
+                                "39",
+                                "15",
+                                "37",
+                                "49"
+                        ),
+                        "49"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 7 X 8?",
+                        List.of(
+                                "11",
+                                "56",
+                                "39",
+                                "82"
+                        ),
+                        "56"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 7 X 9?",
+                        List.of(
+                                "61",
+                                "63",
+                                "41",
+                                "3"
+                        ),
+                        "63"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 8 X 1?",
+                        List.of(
+                                "27",
+                                "83",
+                                "39",
+                                "8"
+                        ),
+                        "8"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 8 X 2?",
+                        List.of(
+                                "70",
+                                "91",
+                                "16",
+                                "77"
+                        ),
+                        "16"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 8 X 3?",
+                        List.of(
+                                "6",
+                                "24",
+                                "38",
+                                "88"
+                        ),
+                        "24"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 8 X 4?",
+                        List.of(
+                                "32",
+                                "89",
+                                "62",
+                                "78"
+                        ),
+                        "32"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 8 X 5?",
+                        List.of(
+                                "6",
+                                "40",
+                                "95",
+                                "41"
+                        ),
+                        "40"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 8 X 6?",
+                        List.of(
+                                "58",
+                                "8",
+                                "48",
+                                "90"
+                        ),
+                        "48"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 8 X 7?",
+                        List.of(
+                                "56",
+                                "13",
+                                "58",
+                                "16"
+                        ),
+                        "56"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 8 X 8?",
+                        List.of(
+                                "41",
+                                "64",
+                                "85",
+                                "64"
+                        ),
+                        "64"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 8 X 9?",
+                        List.of(
+                                "80",
+                                "11",
+                                "72",
+                                "11"
+                        ),
+                        "72"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 9 X 1?",
+                        List.of(
+                                "3",
+                                "9",
+                                "22",
+                                "26"
+                        ),
+                        "9"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 9 X 2?",
+                        List.of(
+                                "18",
+                                "18",
+                                "32",
+                                "6"
+                        ),
+                        "18"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 9 X 3?",
+                        List.of(
+                                "47",
+                                "27",
+                                "55",
+                                "54"
+                        ),
+                        "27"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 9 X 4?",
+                        List.of(
+                                "36",
+                                "83",
+                                "94",
+                                "19"
+                        ),
+                        "36"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 9 X 5?",
+                        List.of(
+                                "45",
+                                "43",
+                                "33",
+                                "18"
+                        ),
+                        "45"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 9 X 6?",
+                        List.of(
+                                "54",
+                                "83",
+                                "66",
+                                "24"
+                        ),
+                        "54"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 9 X 7?",
+                        List.of(
+                                "63",
+                                "58",
+                                "80",
+                                "47"
+                        ),
+                        "63"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 9 X 8?",
+                        List.of(
+                                "72",
+                                "37",
+                                "92",
+                                "58"
+                        ),
+                        "72"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 9 X 9?",
+                        List.of(
+                                "46",
+                                "81",
+                                "76",
+                                "35"
+                        ),
+                        "81"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 10 X 1?",
+                        List.of(
+                                "10",
+                                "62",
+                                "20",
+                                "33"
+                        ),
+                        "10"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 10 X 2?",
+                        List.of(
+                                "36",
+                                "5",
+                                "20",
+                                "81"
+                        ),
+                        "20"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 10 X 3?",
+                        List.of(
+                                "30",
+                                "36",
+                                "61",
+                                "58"
+                        ),
+                        "30"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 10 X 4?",
+                        List.of(
+                                "100",
+                                "40",
+                                "19",
+                                "9"
+                        ),
+                        "40"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 10 X 5?",
+                        List.of(
+                                "80",
+                                "9",
+                                "50",
+                                "96"
+                        ),
+                        "50"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 10 X 6?",
+                        List.of(
+                                "1",
+                                "77",
+                                "60",
+                                "31"
+                        ),
+                        "60"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 10 X 7?",
+                        List.of(
+                                "81",
+                                "49",
+                                "70",
+                                "68"
+                        ),
+                        "70"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 10 X 8?",
+                        List.of(
+                                "79",
+                                "36",
+                                "5",
+                                "80"
+                        ),
+                        "80"
+                )
+        );  
+        
+
+        questions.add(new
+                Question(
+                        "¿Cuál es el producto de la multiplicación 10 X 9?",
+                        List.of(
+                                "85",
+                                "98",
+                                "21",
+                                "90"
+                        ),
+                        "90"
+                )
+        );  
+        
 
 
         return questions;

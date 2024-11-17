@@ -1,10 +1,10 @@
 /**
  * Clase que se encarga de gestionar las etiquetas
- * En: Nov 12 de 2022
+ * En: Nov 12 de 2024
  *
- * @autor: Luis Miguel Álvarez, Cristian Mesa
- * @documentador: Fabián Melo, Andres Mauricio Silva
- * @QA: Martha Mera, Luz Molina
+ * @autor: Maria Paula Rodriguez Diaz
+ * @documentador: Giancarlo Ramirez Pulido, David Perez Alvarado
+ * @QA: Maria Paula Rodriguez Diaz, Giancarlo Ramirez Pulido, David Perez Alvarado
  * Desc: En esta clase se almacenan las posibles etiquetas con los textos que se pueden cambiar
  */
 
@@ -15,7 +15,7 @@ package SoftwareGame.Constants;
  */
 
 public class Labels {
-    public static String gameTitle = "¿QUIEN QUIERE SER DESARROLLADOR?";
+    public static String gameTitle = "MULTIPLUS?";
     public static String onePlayerText = "1 Jugador";
     public static String twoPlayerText = "2 Jugador";
     public static String initGame = "Iniciar";

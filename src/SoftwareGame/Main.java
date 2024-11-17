@@ -1,8 +1,8 @@
 /**
  * Método Main
- * En: Nov 12 de 2022
+ * En: Nov 12 de 2024
  *
- * @autor: Luis Miguel Álvarez
+ * @autor: Maria Paula Rodriguez Diaz
  */
 
 package SoftwareGame;

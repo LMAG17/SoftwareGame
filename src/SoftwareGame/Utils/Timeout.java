@@ -1,8 +1,8 @@
 /**
  * Clase Timeout
- * En: Nov 21 de 2022
+ * En: Nov 21 de 2024
  *
- * @autor: Luis Miguel Álvarez
+ * @autor: Maria Paula Rodriguez Diaz
  */
 package SoftwareGame.Utils;
 /**

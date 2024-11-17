@@ -30,7 +30,7 @@ public class GameOverScreen {
         if (Main.players.size() > 1) {
             title.setText("Has arrazado " + player.getName());
         } else {
-            title.setText(goodEnding ? "Grandioso, debes ser un gran programador" : "Estuvo cerca, intentalo de nuevo");
+            title.setText(goodEnding ? "¡Correcto!" : "Respuesta incorrecta, ¿quieres intentar otra vez?");
         }
         panel.add(title);
         panel.add(tryAgainButton);

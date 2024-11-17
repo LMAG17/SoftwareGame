@@ -1,10 +1,10 @@
 /**
  * Clase con la pantalla de Bienvenida
- * En: Nov 12 de 2022
+ * En: Nov 12 de 2024
  *
- * @autor: Luis Miguel Álvarez, Cristian Mesa
- * @documentador: Fabián Melo, Andres Mauricio Silva
- * @QA: Martha Mera, Luz Molina
+ * @autor: Maria Paula Rodriguez Diaz
+ * @documentador: Giancarlo Ramirez Pulido, David Perez Alvarado
+ * @QA: Maria Paula Rodriguez Diaz, Giancarlo Ramirez Pulido, David Perez Alvarado
  */
 
 /**

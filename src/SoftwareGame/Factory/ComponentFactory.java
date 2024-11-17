@@ -1,10 +1,10 @@
 /**
  * Clase que se encarga de administrar los componentes mediante getter de las constantes
- * En: Nov 14 de 2022
+ * En: Nov 14 de 2024
  *
- * @autor: Luis Miguel Álvarez, Cristian Mesa
- * @documentador: Fabián Melo, Andres Mauricio Silva
- * @QA: Martha Mera, Luz Molina
+ * @autor: Maria Paula Rodriguez Diaz
+ * @documentador: Giancarlo Ramirez Pulido, David Perez Alvarado
+ * @QA: Maria Paula Rodriguez Diaz, Giancarlo Ramirez Pulido, David Perez Alvarado
  * Desc: En esta clase se almacenan los componentes a ser usados en la interfaz del juego
  */
 

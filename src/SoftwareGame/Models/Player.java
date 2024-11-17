@@ -1,9 +1,9 @@
 /**
 * Clase usada para el objeto jugador personalizado como modelo
-*En: Nov 15 de 2022
-*@autor: Luis Miguel Álvarez, Cristian Mesa
-*@documentador: Fabián Melo, Andres Mauricio Silva
-*@QA: Martha Mera, Luz Molina
+*En: Nov 15 de 2024
+*@autor: Maria Paula Rodriguez Diaz
+*@documentador: Giancarlo Ramirez Pulido, David Perez Alvarado
+*@QA: Maria Paula Rodriguez Diaz, Giancarlo Ramirez Pulido, David Perez Alvarado
 */
 package SoftwareGame.Models;
 
